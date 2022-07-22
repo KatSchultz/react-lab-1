@@ -1,0 +1,46 @@
+.choices {
+  margin-left: 10px;
+}
+
+h2 {
+  font-family: "Caveat";
+  padding: 15px;
+  font-size: 3em;
+}
+.flavor-display {
+  border-radius: 10px;
+  margin: 20px 0px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  box-shadow: 0px 0px 20px gray;
+}
+.Light {
+  border: 3px solid #222;
+  color: #000;
+}
+.Dark {
+  background-color: #222;
+  color: #fff;
+  border: 3px solid #fff;
+}
+
+button {
+  background-color: #0e3c7e;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  margin: 5px 10px 5px 0px;
+  border: none;
+}
+
+button:disabled {
+  background-color: gray;
+}
+
+button:active {
+  background-color: #1e60a9;
+}

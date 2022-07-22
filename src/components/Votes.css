@@ -1,0 +1,13 @@
+.votes {
+  margin-left: 10px;
+}
+
+.bar-graph {
+  width: 60vw;
+}
+
+.flav-bar {
+  height: 30px;
+  border-radius: 8px;
+  margin: 5px 0px;
+}
