@@ -5,15 +5,25 @@ import { isDisabled } from "@testing-library/user-event/dist/utils";
 function AdDesigner() {
   const [flavor, setFlavor] = useState("Chocolate");
   const [colorTheme, setColorTheme] = useState("Light");
+  const [fancyFontSize, setFancyFontSize] = useState(40);
+
+  const fontStyle = {
+    fontSize: fancyFontSize + "px",
+  };
 
   return (
     <div className="choices">
       <h2>Ad Designer</h2>
-      <div className="flavor-choice">
+      {/* <div className="ad-display">
         <div className={`${colorTheme} flavor-display`}>
           <p>Vote For</p>
-          <h2 className="flavor-fancy">{flavor}</h2>
+          <h2 style={fontStyle} className="flavor-fancy">
+            {flavor}
+          </h2>
         </div>
+      </div> */}
+      <div className="flavor-choice">
+        <h3 className="flavor-title">What to Support</h3>
         <div className="chocolate">
           <button
             disabled={flavor === "Chocolate"}
@@ -43,8 +53,9 @@ function AdDesigner() {
           </button>
         </div>
       </div>
+
       <div className="color-choice">
-        <h2 className="color-theme">Color Theme</h2>
+        <h3 className="color-theme">Color Theme</h3>
         <div className="color-btns">
           <button
             disabled={colorTheme === "Light"}
@@ -59,6 +70,24 @@ function AdDesigner() {
             className="dark"
           >
             Dark
+          </button>
+        </div>
+      </div>
+      <div className="font-size-choice">
+        <h3 className="font-title">Font Size</h3>
+        <div className="font-size-buttons">
+          <button
+            onClick={() => setFancyFontSize((size) => size - 1)}
+            className="font-down"
+          >
+            Down
+          </button>
+          <div className="width-display">{fancyFontSize}</div>
+          <button
+            onClick={() => setFancyFontSize((size) => size + 1)}
+            className="font-up"
+          >
+            Up
           </button>
         </div>
       </div>

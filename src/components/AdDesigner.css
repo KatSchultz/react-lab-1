@@ -4,8 +4,7 @@
 
 h2 {
   font-family: "Caveat";
-  padding: 15px;
-  font-size: 3em;
+  /* padding: px; */
 }
 .flavor-display {
   border-radius: 10px;
@@ -15,8 +14,18 @@ h2 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  min-width: 300px;
   width: 30%;
   box-shadow: 0px 0px 20px gray;
+}
+.width-display {
+  padding: 0px 20px;
+  text-align: center;
+  font-size: 2em;
+}
+
+.font-size-buttons {
+  display: flex;
 }
 .Light {
   border: 3px solid #222;
