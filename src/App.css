@@ -18,3 +18,11 @@ h6,
 p {
   margin: 0;
 }
+
+@media only screen and (min-width: 800px) {
+  .App {
+    /* background-color: aqua; */
+    flex-direction: row;
+    justify-content: center;
+  }
+}

@@ -11,9 +11,6 @@ function App() {
     <div className="App">
       <div className="content">
         <Header user="IceCreamLover" />
-        <Ad flavor="Chocolate" fontSize={40} darkTheme />
-        <Ad flavor="Vanilla" fontSize={40} darkTheme={false} />
-        <Ad flavor="Strawberry" fontSize={40} darkTheme />
         <AdDesigner />
         <Votes />
       </div>

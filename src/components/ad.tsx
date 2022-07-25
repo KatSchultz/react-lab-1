@@ -9,10 +9,11 @@ interface AdProps {
 }
 
 function Ad({ flavor, fontSize, darkTheme }: AdProps) {
-  const fontStyle = {
+  const styles = {
     fontSize: fontSize + "px",
   };
-  console.log(flavor);
+  console.log(fontSize);
+
   let theme = "";
   if (darkTheme) theme = "dark-theme";
 
@@ -20,7 +21,7 @@ function Ad({ flavor, fontSize, darkTheme }: AdProps) {
     <section>
       <div className={`ad-holder ${theme}`}>
         <p>Vote for</p>
-        <h2>{flavor}</h2>
+        <h2 style={styles}>{flavor}</h2>
       </div>
     </section>
   );

@@ -1,7 +1,11 @@
 .choices {
   margin-left: 10px;
 }
-
+.Ad-holder {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
 h2 {
   font-family: "Caveat";
   /* padding: px; */
@@ -52,4 +56,10 @@ button:disabled {
 
 button:active {
   background-color: #1e60a9;
+}
+
+@media only screen and (min-width: 800px) {
+  .Ad-holder {
+    flex-direction: row;
+  }
 }

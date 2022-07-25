@@ -1,6 +1,6 @@
 import "./AdDesigner.css";
 import { useState } from "react";
-import { isDisabled } from "@testing-library/user-event/dist/utils";
+import Ad from "./ad";
 
 function AdDesigner() {
   const [flavor, setFlavor] = useState("Chocolate");
@@ -13,7 +13,17 @@ function AdDesigner() {
 
   return (
     <div className="choices">
+      <div className="Ad-holder">
+        <Ad flavor="Chocolate" fontSize={50} darkTheme />
+        <Ad flavor="Vanilla" fontSize={30} darkTheme={false} />
+        <Ad flavor="Strawberry" fontSize={60} darkTheme />
+      </div>
       <h2>Ad Designer</h2>
+      <Ad
+        flavor={flavor}
+        fontSize={fancyFontSize}
+        darkTheme={colorTheme === "Dark"}
+      />
       {/* <div className="ad-display">
         <div className={`${colorTheme} flavor-display`}>
           <p>Vote For</p>
