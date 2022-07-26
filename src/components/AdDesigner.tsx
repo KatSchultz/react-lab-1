@@ -13,11 +13,11 @@ function AdDesigner() {
 
   return (
     <div className="choices">
-      <div className="Ad-holder">
+      {/* <div className="Ad-holder">
         <Ad flavor="Chocolate" fontSize={50} darkTheme />
         <Ad flavor="Vanilla" fontSize={30} darkTheme={false} />
         <Ad flavor="Strawberry" fontSize={60} darkTheme />
-      </div>
+      </div> */}
       <h2>Ad Designer</h2>
       <Ad
         flavor={flavor}

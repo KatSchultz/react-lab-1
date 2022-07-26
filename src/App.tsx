@@ -11,8 +11,15 @@ function App() {
     <div className="App">
       <div className="content">
         <Header user="IceCreamLover" />
-        <AdDesigner />
-        <Votes />
+        <div className="Ad-holder">
+          <Ad flavor="Chocolate" fontSize={50} darkTheme />
+          <Ad flavor="Vanilla" fontSize={30} darkTheme={false} />
+          <Ad flavor="Strawberry" fontSize={60} darkTheme />
+        </div>
+        <div className="lower-content">
+          <AdDesigner />
+          <Votes />
+        </div>
       </div>
     </div>
   );
